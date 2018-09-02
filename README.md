@@ -1,24 +1,22 @@
-# README
+# Care Home Management System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Web based care home management system that allows the user to manage a list of rooms and the residents who occupy them.
 
-Things you may want to cover:
+## Prerequisites
+Ruby version: 2.5.1 (x86_64-darwin17)
+Rails version: 5.2.1
 
-* Ruby version
+## To download and run:
+In a terminal window, type:
+    git clone https://github.com/alinemokfa/rails_care_home.git (for HTTPS) or git clone git@github.com:alinemokfa/rails_care_home.git (for SSH)
+    cd rails_care_home
+    bundle install
+    bin/rails db:migrate
+    bin/rails db:seed
+    bin/rails server
+Now please visit `http://localhost:3000` in your browser.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## To run tests:
+In a terminal window, type:
+    cd app
+    rails test
