@@ -1,9 +1,10 @@
 # Care Home Management System
 
-### Web based care home management system that allows the user to manage a list of rooms and the residents who occupy them.
+Web based care home management system that allows the user to manage a list of rooms and the residents who occupy them.
 
 ## Prerequisites
 Ruby version: 2.5.1 (x86_64-darwin17)
+
 Rails version: 5.2.1
 
 ## To download and run:
