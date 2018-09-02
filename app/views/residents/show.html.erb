@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @resident.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @resident.age %>
+</p>
+
+<p>
+  <strong>Allergies:</strong>
+  <%= @resident.allergies %>
+</p>
+
+<p>
+  <strong>Medications:</strong>
+  <%= @resident.medications %>
+</p>
+
+<p>
+  <strong>Next of kin:</strong>
+  <%= @resident.next_of_kin %>
+</p>
+
+<p>
+  <strong>Nok phone number:</strong>
+  <%= @resident.nok_phone_number %>
+</p>
+
+<p>
+  <strong>Shared room:</strong>
+  <%= @resident.shared_room %>
+</p>
+
+<p>
+  <strong>Room:</strong>
+  <%= @resident.room %>
+</p>
+
+<%= link_to 'Edit', edit_resident_path(@resident) %> |
+<%= link_to 'Back', residents_path %>
