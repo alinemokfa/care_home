@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <!-- alerts -->
+    <%= render 'layouts/alerts' %>
     <!-- header -->
     <header>
       <nav>
@@ -19,6 +21,13 @@
           <a href="/rooms">All Rooms</a>
           <a href="/residents/new">Add New Resident</a>
           <a href="/rooms/new">Add New Room</a>
+          <!-- user authentication -->
+          <% if current_user %>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+          <% else %>
+          <%= link_to "Log In", new_user_session_path %>
+          <%= link_to "Sign Up", new_user_registration_path %>
+          <% end %>
         </ul>
       </nav>
     </header>

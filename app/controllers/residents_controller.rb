@@ -1,5 +1,6 @@
 class ResidentsController < ApplicationController
   before_action :set_resident, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /residents
   # GET /residents.json
