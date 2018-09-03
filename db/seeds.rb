@@ -20,7 +20,7 @@ room1.save
 room2 = Room.create({number: "2", capacity: "1"})
 room2.save
 
-resident1 = Resident.create({name: "Rachel M", age: "80", allergies: "Fragrances", medications: "Fluoxetine 20mg", next_of_kin: "Robert M", nok_phone_number: "07767890233", shared_room: true, room_id: room2.id})
+resident1 = Resident.create({name: "Rachel M", age: "80", allergies: "Fragrances", medications: "Fluoxetine 20mg", next_of_kin: "Robert M", nok_phone_number: "07767890233", shared_room: true, room_id: room1.id})
 resident1.save
 
 resident2 = Resident.create({name: "Sonia D", age: "85", allergies: "Nuts", medications: "None", next_of_kin: "Aline M", nok_phone_number: "07533510424", shared_room: false, room_id: room2.id})

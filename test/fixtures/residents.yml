@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  age: 1
-  allergies: MyString
-  medications: MyString
-  next_of_kin: MyString
-  nok_phone_number: MyString
-  shared_room: false
-  room: one
+  name: Rachel M
+  age: 80
+  allergies: Fragrances
+  medications: Fluoxetine 20mg
+  next_of_kin: Robert M
+  nok_phone_number: 07767890233
+  shared_room: true
+  room: two
 
 two:
-  name: MyString
-  age: 1
-  allergies: MyString
-  medications: MyString
-  next_of_kin: MyString
-  nok_phone_number: MyString
+  name: Sonia D
+  age: 85
+  allergies: Nuts
+  medications: None
+  next_of_kin: Aline M
+  nok_phone_number: 07533510424
   shared_room: false
-  room: two
+  room: one
