@@ -5,6 +5,7 @@ class ResidentsController < ApplicationController
   # GET /residents.json
   def index
     @residents = Resident.all
+    @rooms = Room.all
   end
 
   # GET /residents/1
@@ -15,6 +16,7 @@ class ResidentsController < ApplicationController
   # GET /residents/new
   def new
     @resident = Resident.new
+    @room = Room.all
   end
 
   # GET /residents/1/edit
@@ -28,7 +30,7 @@ class ResidentsController < ApplicationController
 
     respond_to do |format|
       if @resident.save
-        format.html { redirect_to @resident, notice: 'Resident was successfully created.' }
+        format.html { redirect_to residents_path, notice: 'Resident was successfully created.' }
         format.json { render :show, status: :created, location: @resident }
       else
         format.html { render :new }

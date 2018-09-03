@@ -37,7 +37,11 @@
 
 <p>
   <strong>Room:</strong>
-  <%= @resident.room.number %>
+  <% if @resident.room %>
+  <td><%= resident.room.number %></td>
+  <% else %>
+  <td>Not assigned</td>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_resident_path(@resident) %> |

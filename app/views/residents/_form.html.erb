@@ -48,7 +48,7 @@
 
   <div class="field">
     <%= form.label :room_id %>
-    <%= form.text_field :room_id %>
+    <%= form.select :room_id, @room.map { |f| f.number }, include_blank: true %>
   </div>
 
   <div class="actions">
