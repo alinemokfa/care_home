@@ -22,6 +22,8 @@ class ResidentsController < ApplicationController
 
   # GET /residents/1/edit
   def edit
+    @residents = Resident.all
+    @rooms = Room.all
   end
 
   # POST /residents
@@ -57,9 +59,9 @@ class ResidentsController < ApplicationController
   # DELETE /residents/1
   # DELETE /residents/1.json
   def destroy
-    @resident.destroy
+    @resident.delete
     respond_to do |format|
-      format.html { redirect_to residents_url, notice: 'Resident was successfully destroyed.' }
+      format.html { redirect_to residents_url, notice: 'Resident was successfully deleted.' }
       format.json { head :no_content }
     end
   end
