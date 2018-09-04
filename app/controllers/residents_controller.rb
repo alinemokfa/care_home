@@ -22,7 +22,6 @@ class ResidentsController < ApplicationController
 
   # GET /residents/1/edit
   def edit
-    @residents = Resident.all
     @rooms = Room.all
   end
 
