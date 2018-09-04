@@ -16,6 +16,10 @@ module ResidentsHelper
   end
 
   def select_options(rooms)
-    rooms.map { |f| f.number }
+    if rooms
+      rooms.map { |f| f.number }
+    else
+      'No rooms available'
+    end
   end
 end
