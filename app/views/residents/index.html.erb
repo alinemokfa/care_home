@@ -1,37 +1,23 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Residents</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Allergies</th>
-      <th>Medications</th>
-      <th>Next of kin</th>
-      <th>Nok phone number</th>
-      <th>Shared room</th>
-      <th>Room</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @residents.each do |resident| %>
-      <tr>
-        <td><%= resident.name %></td>
-        <td><%= resident.age %></td>
-        <td><%= resident.allergies %></td>
-        <td><%= resident.medications %></td>
-        <td><%= resident.next_of_kin %></td>
-        <td><%= resident.nok_phone_number %></td>
-        <td><%= shared_room?(resident) %></td>
-        <td><%= assigned_room?(resident) %></td>
-        <td><%= link_to 'Show', resident %></td>
-        <td><%= link_to 'Edit', edit_resident_path(resident) %></td>
-        <td><%= link_to 'Delete', resident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="resident-container">
+  <p id="notice"><%= notice %></p>
+  <h1>Residents</h1>
+    <div class="row">
+      <% @residents.each do |resident| %>
+        <div class="col-2">
+          <div class="resident">
+            <p>Name: <%= resident.name %></>
+            <p>Age: <%= resident.age %></>
+            <p>Allergies: <%= resident.allergies %></>
+            <p>Medications: <%= resident.medications %></>
+            <p>Next of Kin: <%= resident.next_of_kin %></>
+            <p>NOK phone number: <%= resident.nok_phone_number %></>
+            <p>Shared room: <%= shared_room?(resident) %></>
+            <p>Room: <%= assigned_room?(resident) %></><br></br>
+            <td><%= link_to 'Show', resident %></td>
+            <td><%= link_to 'Edit', edit_resident_path(resident) %></td>
+            <td><%= link_to 'Delete', resident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>

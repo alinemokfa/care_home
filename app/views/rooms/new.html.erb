@@ -1,5 +1,8 @@
-<h1>New Room</h1>
+<div class="room-container">
+  <h1>New Room</h1>
 
-<%= render 'form', room: @room %>
-
-<%= link_to 'Back', rooms_path %>
+  <div class="row">
+    <%= render 'form', room: @room %>
+  </div>
+ <%= link_to 'Back', rooms_path %>
+</div>

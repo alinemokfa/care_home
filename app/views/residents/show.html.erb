@@ -1,44 +1,47 @@
-<p id="notice"><%= notice %></p>
+<div class="resident-container">
+  <p id="notice"><%= notice %></p>
+  <h1> <%= @resident.name %> </h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @resident.name %>
-</p>
+  <div class="row">
+   <div class="col-1">
+     <div class="resident">
+        <p>
+          <strong>Age:</strong>
+          <%= @resident.age %>
+        </p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @resident.age %>
-</p>
+        <p>
+          <strong>Allergies:</strong>
+          <%= @resident.allergies %>
+        </p>
 
-<p>
-  <strong>Allergies:</strong>
-  <%= @resident.allergies %>
-</p>
+        <p>
+          <strong>Medications:</strong>
+          <%= @resident.medications %>
+        </p>
 
-<p>
-  <strong>Medications:</strong>
-  <%= @resident.medications %>
-</p>
+        <p>
+          <strong>Next of kin:</strong>
+          <%= @resident.next_of_kin %>
+        </p>
 
-<p>
-  <strong>Next of kin:</strong>
-  <%= @resident.next_of_kin %>
-</p>
+        <p>
+          <strong>Nok phone number:</strong>
+          <%= @resident.nok_phone_number %>
+        </p>
 
-<p>
-  <strong>Nok phone number:</strong>
-  <%= @resident.nok_phone_number %>
-</p>
+        <p>
+          <strong>Shared room:</strong>
+          <td><%= shared_room?(@resident) %></td>
+        </p>
 
-<p>
-  <strong>Shared room:</strong>
-  <td><%= shared_room?(@resident) %></td>
-</p>
-
-<p>
-  <strong>Room:</strong>
-  <td><%= assigned_room?(@resident) %></td>
-</p>
-
-<%= link_to 'Edit', edit_resident_path(@resident) %> |
-<%= link_to 'Back', residents_path %>
+        <p>
+          <strong>Room:</strong>
+          <td><%= assigned_room?(@resident) %></td>
+        </p>
+      </div>
+    </div>
+  </div>
+  <%= link_to 'Edit', edit_resident_path(@resident) %> |
+  <%= link_to 'Back', residents_path %>
+</div>

@@ -13,3 +13,133 @@
  *= require_tree .
  *= require_self
  */
+
+ body, html{
+   height:100%;
+   margin:0;
+   font-size:16px;
+   font-family:"Lato", sans-serif;
+   font-weight:400;
+   line-height:1.8em;
+   color:#666;
+ }
+
+ .resident-container, .room-container, .auth-container {
+   max-width: 970px;
+   margin: 0 auto;
+   margin-top: 50px;
+ }
+
+ .resident-container h1, .room-container h1, .auth-container h1{
+     background-color: #db5785;
+     color:#fff;
+     padding:20px;
+ }
+
+ .resident ul, .room ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
+
+ .auth-container em {
+   font-size: 10px;
+ }
+
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+
+ .col-2 {
+   flex: 0 0 33.33%;
+   padding: 10px;
+ }
+
+ .col-1{
+   flex: 0 0 50%;
+   padding: 10px;
+ }
+ .resident, .room {
+   padding: 10px;
+   color: #2E2E2E;
+ }
+
+ .resident a, .room a{
+   text-transform:uppercase;
+   text-decoration: none;
+   font-size:12px;
+   color: black;
+ }
+
+ a{
+   text-transform:uppercase;
+   text-decoration: none;
+   font-size:12px;
+   color: white;
+ }
+
+ a:hover {
+   background-color: #db5785;
+   color: white;
+ }
+
+
+ header.menu {
+   background-color: white;
+   overflow: auto;
+   white-space: nowrap;
+   letter-spacing:1px;
+   opacity:0.80;
+ }
+
+ header.menu a {
+   display: inline-block;
+   color: black;
+   text-align: center;
+   padding: 14px;
+   text-decoration: none;
+ }
+
+ header.menu a:hover {
+   background-color: #db5785;
+ }
+
+ .home{
+   position:relative;
+   opacity:0.80;
+   background-position:center;
+   background-size: contain;
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+   min-height:70%;
+ }
+
+ .section{
+   text-align:center;
+   padding:20px 40px;
+ }
+
+ .astext{
+   position:absolute;
+   top:50%;
+   width:100%;
+   text-align:center;
+   color:#000;
+   font-size:27px;
+   letter-spacing:8px;
+   text-transform:uppercase;
+ }
+
+ .astext .border{
+   padding:50px;
+ }
+
+ .astext .border.trans{
+   background-color:transparent;
+ }
+
+ label {
+   width: 150px;
+   display: inline-block;
+ }

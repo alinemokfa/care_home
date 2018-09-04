@@ -1,6 +1,9 @@
-<h1>Editing Resident</h1>
+<div class="resident-container">
+  <h1>Editing Resident</h1>
 
-<%= render 'form', resident: @resident %>
-
-<%= link_to 'Show', @resident %> |
-<%= link_to 'Back', residents_path %>
+  <div class="row">
+    <%= render 'form', resident: @resident %>
+  </div>
+  <%= link_to 'Show', @resident %> |
+  <%= link_to 'Back', residents_path %>
+</div>

@@ -1,14 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="room-container">
+  <p id="notice"><%= notice %></p>
+  <h1> Selected Room </h1>
 
-<p>
-  <strong>Number:</strong>
-  <%= @room.number %>
-</p>
+  <div class="row">
+   <div class="col-1">
+     <div class="room">
+        <p>
+          <strong>Number:</strong>
+          <%= @room.number %>
+        </p>
 
-<p>
-  <strong>Capacity:</strong>
-  <%= @room.capacity %>
-</p>
-
-<%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+        <p>
+          <strong>Capacity:</strong>
+          <%= @room.capacity %>
+        </p>
+      </div>
+    </div>
+  </div>
+  <%= link_to 'Edit', edit_room_path(@room) %> |
+  <%= link_to 'Back', rooms_path %>
+</div
