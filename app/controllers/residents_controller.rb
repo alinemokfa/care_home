@@ -17,11 +17,12 @@ class ResidentsController < ApplicationController
   # GET /residents/new
   def new
     @resident = Resident.new
-    @room = Room.all
+    @rooms = Room.all
   end
 
   # GET /residents/1/edit
   def edit
+    @rooms = Room.all
   end
 
   # POST /residents
