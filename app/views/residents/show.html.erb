@@ -32,16 +32,12 @@
 
 <p>
   <strong>Shared room:</strong>
-  <%= @resident.shared_room %>
+  <td><%= shared_room?(@resident) %></td>
 </p>
 
 <p>
   <strong>Room:</strong>
-  <% if @resident.room %>
-  <td><%= resident.room.number %></td>
-  <% else %>
-  <td>Not assigned</td>
-  <% end %>
+  <td><%= assigned_room?(@resident) %></td>
 </p>
 
 <%= link_to 'Edit', edit_resident_path(@resident) %> |

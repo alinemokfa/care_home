@@ -48,7 +48,7 @@
 
   <div class="field">
     <%= form.label :room_id %>
-    <%= form.select :room_id, @rooms.map { |f| f.number }, include_blank: true %>
+    <%= form.select :room_id, select_options(@rooms), include_blank: true %>
   </div>
 
   <div class="actions">

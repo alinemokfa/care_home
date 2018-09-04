@@ -26,12 +26,8 @@
         <td><%= resident.medications %></td>
         <td><%= resident.next_of_kin %></td>
         <td><%= resident.nok_phone_number %></td>
-        <td><%= resident.shared_room %></td>
-        <% if resident.room %>
-        <td><%= resident.room.number %></td>
-        <% else %>
-        <td>Not assigned</td>
-        <% end %>
+        <td><%= shared_room?(resident) %></td>
+        <td><%= assigned_room?(resident) %></td>
         <td><%= link_to 'Show', resident %></td>
         <td><%= link_to 'Edit', edit_resident_path(resident) %></td>
         <td><%= link_to 'Delete', resident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
