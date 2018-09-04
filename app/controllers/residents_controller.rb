@@ -1,6 +1,6 @@
 class ResidentsController < ApplicationController
   before_action :set_resident, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   # GET /residents
   # GET /residents.json
@@ -22,7 +22,6 @@ class ResidentsController < ApplicationController
 
   # GET /residents/1/edit
   def edit
-    @rooms = Room.all
   end
 
   # POST /residents

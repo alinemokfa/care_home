@@ -2,7 +2,7 @@ require 'test_helper'
 
 class RoomsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @room = rooms(:one)
+    @room = rooms(:two)
   end
 
   test "should get index" do
@@ -20,7 +20,7 @@ class RoomsControllerTest < ActionDispatch::IntegrationTest
       post rooms_url, params: { room: { capacity: @room.capacity, number: @room.number } }
     end
 
-    assert_redirected_to room_url(Room.last)
+    assert_redirected_to rooms_url
   end
 
   test "should show room" do

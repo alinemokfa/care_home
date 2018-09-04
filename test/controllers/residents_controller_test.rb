@@ -6,12 +6,12 @@ class ResidentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get residents_url
+    get '/residents'
     assert_response :success
   end
 
   test "should get new" do
-    get new_resident_url
+    get '/residents/new'
     assert_response :success
   end
 
@@ -20,7 +20,7 @@ class ResidentsControllerTest < ActionDispatch::IntegrationTest
       post residents_url, params: { resident: { age: @resident.age, allergies: @resident.allergies, medications: @resident.medications, name: @resident.name, next_of_kin: @resident.next_of_kin, nok_phone_number: @resident.nok_phone_number, room_id: @resident.room_id, shared_room: @resident.shared_room } }
     end
 
-    assert_redirected_to resident_url(Resident.last)
+    assert_redirected_to residents_url
   end
 
   test "should show resident" do
