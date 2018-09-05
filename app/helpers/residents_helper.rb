@@ -1,4 +1,5 @@
 module ResidentsHelper
+
   def shared_room?(resident)
     if resident.shared_room
       'Yes'
