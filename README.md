@@ -13,7 +13,7 @@ In a terminal window, type:
 
     git clone https://github.com/alinemokfa/rails_care_home.git (for HTTPS) or git clone git@github.com:alinemokfa/rails_care_home.git (for SSH)
 
-    cd rails_care_home
+    cd care_home
 
     bundle install
 
