@@ -6,6 +6,8 @@ Ruby version: 2.5.1 (x86_64-darwin17)
 
 Rails version: 5.2.1
 
+Bundler version: 1.16.4
+
 ## To download and run:
 In a terminal window, type:
 
@@ -26,6 +28,4 @@ Now please visit `http://localhost:3000` in your browser.
 ## To run tests:
 In a terminal window, type:
 
-    cd app
-
-    rails test
+    bin/rails test test
