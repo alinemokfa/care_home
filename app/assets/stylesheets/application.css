@@ -106,13 +106,14 @@
  }
 
  .home{
+   background-image: url('https://i.imgur.com/fvYzHOx.jpg');
    position:relative;
-   opacity:0.80;
    background-position:center;
    background-size: contain;
+   background-color: white;
    background-repeat:no-repeat;
    background-attachment:fixed;
-   min-height:70%;
+   min-height:100%;
  }
 
  .section{
@@ -121,14 +122,17 @@
  }
 
  .astext{
+   opacity:0.70;
+   background-color: white;
    position:absolute;
-   top:50%;
+   top:35%;
    width:100%;
    text-align:center;
    color:#000;
    font-size:27px;
    letter-spacing:8px;
    text-transform:uppercase;
+   padding:20px;
  }
 
  .astext .border{
